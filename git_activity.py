@@ -1,4 +1,5 @@
 import os
+import time
 
 flip = False
 
@@ -14,6 +15,7 @@ while True:
             exec_cmd("git commit -m \" activity 2 \"")
             exec_cmd("git push -u origin master")
             flip = False
+    time.sleep(24 * 60 * 60) #sleep for 1 day
 
 
 
